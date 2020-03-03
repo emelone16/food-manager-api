@@ -1,2 +1,20 @@
+# macOS
+.DS_Store
+
+# vscode
+jsconfig.json
+
+# node
+package-lock.json
 node_modules/
+
+# typescript
+build/
+
+# tarball
+.tgz
+
+# dotenv
+.env
+
 serviceAccountKey.json
