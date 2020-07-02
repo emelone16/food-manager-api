@@ -1,8 +1,8 @@
 import { Request, Response } from "express";
 import { firestore } from "firebase-admin";
-import { ApiResponse, sendResponse } from "types/apiResponse";
-import { createPantryItem, PantryItem } from "types/pantry";
-import { createUser } from "types/user";
+import { ApiResponse, sendResponse } from "../../types/apiResponse";
+import { createPantryItem, PantryItem } from "../../types/pantry";
+import { createUser } from "../../types/user";
 
 const removePantryItem = async (
   docRef: firestore.DocumentReference,

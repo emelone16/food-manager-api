@@ -1,16 +1,16 @@
 import express from "express";
-import { setupDatabase } from "fbdb/index";
+import { setupDatabase } from "./fbdb";
 
 // Types
-import { Backend } from "types/backend";
+import { Backend } from "./types/backend";
 
 // Express
 import bodyParserMiddleware from "./express/middleware/bodyParser";
-import { listenProd } from "./express/start";
+import listen from "./express/start";
 
 // Routes
-import pantryRoutes from "routes/pantry";
-import initializationRoutes from "routes/user/initialization";
+import pantryRoutes from "./routes/pantry";
+import initializationRoutes from "./routes/user/initialization";
 
 // Backend Setup
 const backend: Backend = {
@@ -27,5 +27,5 @@ initializationRoutes(backend);
 pantryRoutes(backend);
 
 // Start listening
-// listen(backend);
-listenProd(backend);
+listen(backend);
+// listenProd(backend);

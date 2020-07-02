@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { firestore } from "firebase-admin";
-import { Backend } from "types/backend";
-import { createUser, User } from "types/user";
+import { Backend } from "../../types/backend";
+import { createUser, User } from "../../types/user";
 
 const userExists = async (
   userRef: firestore.CollectionReference,

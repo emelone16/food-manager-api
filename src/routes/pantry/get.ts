@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { firestore } from "firebase-admin";
-import { ApiResponse, sendResponse } from "types/apiResponse";
-import { createUser } from "types/user";
+import { ApiResponse, sendResponse } from "../../types/apiResponse";
+import { createUser } from "../../types/user";
 
 const getPantry = async (
   docRef: firestore.DocumentReference

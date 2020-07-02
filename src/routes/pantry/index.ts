@@ -1,4 +1,4 @@
-import { Backend } from "types/backend";
+import { Backend } from "../../types/backend";
 import deletePantryHandler from "./delete";
 import getPantryHandler from "./get";
 import putPantryHandler from "./put";
