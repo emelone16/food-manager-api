@@ -1,4 +1,3 @@
-import path from "path";
 import webpack from "webpack";
 
 const config: webpack.Configuration = {
@@ -14,12 +13,15 @@ const config: webpack.Configuration = {
   },
   output: {
     filename: "bundle.js",
-    path: path.resolve(__dirname, "build")
+    path: "/home/erik/Desktop/Projects/food-manager-api/build/"
+    // path: path.resolve(__dirname, "build")
   },
   resolve: {
     alias: {
-      types: path.resolve(__dirname, "src/types/"),
-      routes: path.resolve(__dirname, "src/routes/")
+      types: "/home/erik/Desktop/Projects/food-manager-api/src/types/",
+      routes: "/home/erik/Desktop/Projects/food-manager-api/src/types/"
+      // types: path.resolve(__dirname, "src/types/"),
+      // routes: path.resolve(__dirname, "src/routes/")
     },
     extensions: [".ts", ".js", ".json"],
     modules: ["src", "node_modules"]
