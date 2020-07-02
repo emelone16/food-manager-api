@@ -6,7 +6,7 @@ import { Backend } from "./types/backend";
 
 // Express
 import bodyParserMiddleware from "./express/middleware/bodyParser";
-import listen from "./express/start";
+import { listenProd } from "./express/start";
 
 // Routes
 import pantryRoutes from "./routes/pantry";
@@ -27,5 +27,5 @@ initializationRoutes(backend);
 pantryRoutes(backend);
 
 // Start listening
-listen(backend);
-// listenProd(backend);
+// listen(backend);
+listenProd(backend);
