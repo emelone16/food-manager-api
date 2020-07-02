@@ -3,5 +3,5 @@
   "ext": "ts",
   "ignore": ["src/**/*.spec.ts"],
   "exec":
-    "tslint -c tslint.json -p tsconfig.json --fix && ts-node -r tsconfig-paths/register ./src/app.ts"
+    "tslint -c tslint.json -p tsconfig.json --fix && ts-node -r tsconfig-paths/register ./src/index.ts"
 }
