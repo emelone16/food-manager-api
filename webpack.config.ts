@@ -1,5 +1,5 @@
-import path from "path"
-import webpack from "webpack"
+import path from "path";
+import webpack from "webpack";
 
 const config: webpack.Configuration = {
   entry: "./src/index.ts",
@@ -21,10 +21,10 @@ const config: webpack.Configuration = {
       types: path.resolve(__dirname, "src/types/"),
       routes: path.resolve(__dirname, "src/routes/")
     },
-    extensions: [".ts", ".js"],
+    extensions: [".ts", ".js", ".json"],
     modules: ["src", "node_modules"]
   },
   target: "node"
-}
+};
 
-export default config
+export default config;
