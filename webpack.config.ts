@@ -19,7 +19,7 @@ const config: webpack.Configuration = {
   resolve: {
     alias: {
       types: "/home/erik/Desktop/Projects/food-manager-api/src/types/",
-      routes: "/home/erik/Desktop/Projects/food-manager-api/src/types/"
+      routes: "/home/erik/Desktop/Projects/food-manager-api/src/routes/"
       // types: path.resolve(__dirname, "src/types/"),
       // routes: path.resolve(__dirname, "src/routes/")
     },
