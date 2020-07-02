@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "API For Managing a digital pantry",
   "main": "build/src/index.js",
+  "types": "build/src/index.d.ts",
   "scripts": {
     "build": "tsc",
     "prestart": "npm run build",
