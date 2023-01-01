@@ -17,7 +17,7 @@
     "enhanced-resolve": "^4.1.1",
     "express": "^4.16.3",
     "firebase-admin": "^8.9.1",
-    "tsconfig-paths": "^3.9.0"
+    "tsconfig-paths": "^3.10.1"
   },
   "devDependencies": {
     "@types/express": "^4.16.0",
